@@ -1,0 +1,51 @@
+HTML:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="post-office-form.css">
+</head>
+<body>
+    <h1>Post Office Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" required>
+        </div>
+        <div class="form-group">
+            <label for="package">Package Type:</label>
+            <select id="package" name="package" required>
+                <option value="envelope">Envelope</option>
+                <option value="box">Box</option>
+                <option value="parcel">Parcel</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="weight">Weight (in grams):</label>
+            <input type="number" id="weight" name="weight" required>
+        </div>
+        <div class="form-group">
+            <label for="delivery-option">Delivery Option:</label>
+            <input type="radio" id="standard" name="delivery-option" value="standard" required>
+            <label for="standard">Standard</label>
+            <input type="radio" id="express" name="delivery-option" value="express" required>
+            <label for="express">Express</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+```
+
